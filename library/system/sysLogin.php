@@ -18,6 +18,9 @@ if(isset($_POST['signup'])){
     if($query -> rowCount() > 0){
         $password = $query -> fetch()['password'];
         if(password_verify($_POST['password'], $password)){
+            $_SESSION['auth'] = true;
+            $_SESSION['login'] = $_POST['login'];
+            setcookie("login", $_POST['login'], time()+60);
             header("location: /main");
         }
     }

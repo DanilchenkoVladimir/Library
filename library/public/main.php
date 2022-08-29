@@ -9,6 +9,14 @@
 
 страница майн
 
+<?
+    if(isset($_SESSION['login'])){
+        
+
+        echo   $_SESSION['login'];
+    }
+?>
+
 <? include_once "$path/private/script.php"; ?>
 </body>
 </html>

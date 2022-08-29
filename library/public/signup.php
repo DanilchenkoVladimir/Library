@@ -31,7 +31,7 @@ require_once "$path/system/sysSignup.php";
                 
                 <div class="row">
                     <div class="input-field col s12">
-                        <input id="login" name="login" type="text" class="validate">
+                        <input id="login" name="login" type="text" class="validate" <? if(isset($_POST['login'])) echo "value='$_POST[login]'"; ?>>
                         <label for="login">Логин</label>
                     </div>
                 </div>

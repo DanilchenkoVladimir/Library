@@ -36,6 +36,32 @@ $path=$_SERVER['DOCUMENT_ROOT'];
     </div>
 
     <div class="nav-content teal lighten-1">
+      
+        <div class="row">
+    <div class="col s12 m6">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Card Title</span>
+                <?
+     if(isset($_SESSION['login'])){
+        
+
+        echo   $_SESSION['login'];
+    }
+?>
+         
+          <p>I am a very simple card. I am good at containing small bits of information.
+          I am convenient because I require little markup to use effectively.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    
+  </div>
+
+      </div>
       <span class="nav-title"></span>
       <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal" href="/signup">
         <i class="material-icons">add</i>
