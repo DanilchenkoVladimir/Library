@@ -1,8 +1,6 @@
 <?
 $path = $_SERVER['DOCUMENT_ROOT'];
 require_once "$path/system/db.php";
-session_start();
-
 
 if($_SERVER['REDIRECT_URL'] == "/" or $_SERVER['REDIRECT_URL'] == "/main"):
     require_once "$path/public/main.php";

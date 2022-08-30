@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-
-
 .mybtn {
     right: 110px !important;
 
@@ -62,3 +60,56 @@
     text-decoration: underline;
     margin-bottom: 5px;
 }
+
+/* окно регистрации end*/
+
+
+/* карточка книг */
+
+.catalog__item {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid grey;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    margin-bottom: 5px;
+}
+
+.header__wrapper {
+    min-width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.content__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.item__header{
+    font-size: 1.25rem;
+}
+
+.item__img {
+    height: 180px;
+    width: 100px;
+}
+
+.book__img {
+    height: inherit;
+}
+
+.item__descr {
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 750px;  
+}
+
+/* карточка книг end */

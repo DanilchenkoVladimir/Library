@@ -18,7 +18,7 @@ require_once "$path/system/sysLogin.php";
                 <p class="reg__descr">для входа введите логин и пароль</p>
 
                 <div class="row">
-                <form class="col s6 offset-s3" id="formLogin" method="post">
+                    <form class="col s6 offset-s3" id="formLogin" method="post">
 
                         <div class="error__block">
                             <?
@@ -50,7 +50,7 @@ require_once "$path/system/sysLogin.php";
                                 </button>
                             </div>
                         </div>  
-                </form> 
+                    </form> 
             </div>
         </div>
 

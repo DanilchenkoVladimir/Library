@@ -1,11 +1,7 @@
 <?php
 $path=$_SERVER['DOCUMENT_ROOT'];
 
-if(isset($_POST['exitProfile'])){
-    $_SESSION['auth']=NULL;
-    $_SESSION['login']=NULL;
-    header("location: /login");
-}
+require_once "$path/system/sysLogoff.php";
 
 if(isset($_POST['logIn'])){
   header("location: /catalog");
@@ -40,7 +36,7 @@ if(isset($_POST['logIn'])){
                 <?
                   if(isset($_SESSION['login'])){?>
                       <form action="" method="post">
-                        <input class="header__button" type="submit" name="exitProfile" value="ВЫХОД">
+                        <input class="header__button" type="submit" name="logOff" value="ВЫХОД">
                       </form>
                       
                   <?}else{
@@ -54,5 +50,3 @@ if(isset($_POST['logIn'])){
       </div>
     </div>
 </nav>
-
-
