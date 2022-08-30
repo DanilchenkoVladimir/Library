@@ -1,7 +1,6 @@
 <!-- логика для логина -->
 
 <?
-
 function clearValue($value){
     $value = trim($value);
     $value = htmlspecialchars($value);
@@ -9,8 +8,7 @@ function clearValue($value){
 }
 
 if(isset($_POST['LOGIN'])){
-    $query = $db -> prepare("SELECT * FROM library.users WHERE login = :login ");  
-
+    $query = $db -> prepare("SELECT * FROM library.users WHERE login = :login "); 
     $query -> execute([
         ":login" => clearValue($_POST['login'])
     ]);
@@ -24,5 +22,6 @@ if(isset($_POST['LOGIN'])){
             header("location: /catalog");
         }
     }
-}    
+}
+
 ?>

@@ -6,6 +6,7 @@ require_once "$path/system/sysLogoff.php";
 if(isset($_POST['logIn'])){
   header("location: /catalog");
 }
+
 ?>
 
 <nav class="nav-extended ">
@@ -29,7 +30,6 @@ if(isset($_POST['logIn'])){
                     echo  '<p>Гость</p>';
                   }
                 ?>
-
             </div>
 
             <div class="card-action">                         

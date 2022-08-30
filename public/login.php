@@ -53,7 +53,6 @@ require_once "$path/system/sysLogin.php";
                     </form> 
             </div>
         </div>
-
     </div>
 
     <? include_once "$path/private/script.php"; ?>
