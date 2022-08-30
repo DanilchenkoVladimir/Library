@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.mybtn {
+    right: 110px !important;
+
+}
+
+/* окно регистрации */
+
+.form__wrap {
+    /* display: flex; */
+    padding: 100px;
+}
+
+.reg__header {
+    font-size: 2rem;
+    font-family: serif;
+    text-align: center;
+    color: grey; 
+    margin: 0;
+    padding: 0;
+}
+
+.reg__descr {
+    font-size: 2rem;
+    font-family: serif;
+    text-align: center;
+    color: grey; 
+    margin: 0;
+    padding: 0;
+}
+
+.btn__plate {
+    position: relative;
+}
+
+.error__block {
+    font-size: 2rem;
+    font-family: serif;
+    text-align: center;
+    color: red;
+}
+
+.reg_success {
+    border-bottom: 1px solid red;
+}
+
+.header__button {
+    color: #ffab40;
+    text-transform: uppercase;
+    background: transparent;
+    border: none;    
+}
+
+.card__descr {
+    
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
